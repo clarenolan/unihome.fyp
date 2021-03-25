@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".student.SavedProperties"
+    android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.UNIHOMEAPP.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorOnPrimary"
+            app:popupTheme="@style/Theme.UNIHOMEAPP.PopupOverlay">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="8">
+
+
+                <ImageView
+                    android:id="@+id/back2"
+                    android:layout_weight="0.2"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:lineSpacingExtra="6dp"
+                    android:textSize="20sp"
+                    android:layout_weight="6"
+                    android:text="Saved Properties"
+                    android:gravity="center"
+                    android:textColor="#757071" />
+
+            </LinearLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <View
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black" />
+
+<!--    <ViewSwitcher-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/switcher"-->
+<!--        >-->
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/noSaved"
+        >
+
+        <ImageView
+
+            android:paddingTop="90dp"
+            android:text="NOSAVED"
+            android:src="@drawable/nosaved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+            <Button
+                android:id="@+id/browse"
+                android:layout_marginTop="80dp"
+                android:layout_gravity="center_horizontal"
+                android:translationZ="10dp"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="BROWSE PROPERTIES"
+                android:backgroundTint="@color/orange"/>
+
+
+    </LinearLayout>
+<!--    <ImageView-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_width="450dp"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:id="@+id/noLogo"-->
+<!--        android:src="@drawable/middlelogo2"-->
+<!--        android:layout_marginBottom="20dp"/>-->
+
+
+
+    <!--        android:src="@drawable/nosaved"-->
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/recyclerViewSaved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center|bottom"
+        android:layout_width="450dp"
+        android:layout_height="56dp"
+        android:src="@drawable/middlelogo2"
+        android:layout_marginBottom="20dp"/>
+
+
+
+
+</FrameLayout>

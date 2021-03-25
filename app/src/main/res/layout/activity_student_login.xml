@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/white"
+    tools:context=".student.StudentLogin">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="-5dp"
+
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:padding="8dp"
+            android:src="@drawable/unihomelogooutlinecrop" />
+    </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:translationZ="60dp"
+            android:layout_marginTop="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="46dp"
+            android:paddingRight="44dp"
+           >
+
+            <!--        <ImageView-->
+            <!--            android:layout_width="200dp"-->
+            <!--            android:layout_height="180dp"-->
+            <!--            android:layout_gravity="center_horizontal"-->
+            <!--            android:layout_marginTop="30dp"-->
+            <!--            android:src="@drawable/logo"-->
+            <!--            android:transitionName="logo_image" />-->
+
+
+
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_gravity="center_horizontal"-->
+            <!--            android:text="Sign in using your email and password!"-->
+            <!--            android:textSize="18sp"-->
+            <!--            android:transitionName="logo_desc" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:translationZ="60dp"
+                android:layout_marginTop="2dp"
+                android:paddingTop="7dp"
+                android:text="STUDENT LOGIN"
+                android:textStyle="bold"
+                android:textSize="21sp"
+                android:transitionName="logo_text" />
+
+            <EditText
+                android:id="@+id/inputEmail"
+                android:layout_width="300dp"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="38dp"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:layout_marginLeft="4dp"/>
+
+            <EditText
+                android:id="@+id/inputPassword"
+                android:layout_width="300dp"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:layout_marginLeft="4dp"
+                android:paddingLeft="8dp"/>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="156dp">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:elevation="8dp"
+            android:translationZ="65dp"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#00aaad"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:onClick="startLogin"
+            android:text="New user? Register Now!"
+            android:textColor="#00c7cf"
+            android:textSize="17sp"
+            />
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationZ="62dp"
+        android:layout_gravity="center|bottom"
+        android:visibility="gone" />
+
+
+</FrameLayout>
+
+
+

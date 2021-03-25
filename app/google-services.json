@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "367702351271",
+    "firebase_url": "https://unihomeapp.firebaseio.com",
+    "project_id": "unihomeapp",
+    "storage_bucket": "unihomeapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367702351271:android:902ac7bcf1805a34bbea82",
+        "android_client_info": {
+          "package_name": "com.example.unihomeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367702351271-cs7lvdru4u7bkd13fal5gj4kjdo7f7mt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqAWLAT4K6EwQou6UgF1IPZ8J7RZcdoMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367702351271-cs7lvdru4u7bkd13fal5gj4kjdo7f7mt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367702351271:android:8402ee1f82dbb9aabbea82",
+        "android_client_info": {
+          "package_name": "com.unihomefyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367702351271-cs7lvdru4u7bkd13fal5gj4kjdo7f7mt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqAWLAT4K6EwQou6UgF1IPZ8J7RZcdoMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367702351271-cs7lvdru4u7bkd13fal5gj4kjdo7f7mt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
